@@ -1,0 +1,29 @@
+{
+  "name": "n8n-nodes-getattrib",
+  "version": "0.1.0",
+  "description": "GetAttrib for n8n: send leads and sales into GetAttrib so they are traced back to the ad that brought them.",
+  "keywords": ["n8n-community-node-package", "getattrib", "attribution", "marketing", "leads", "sales"],
+  "license": "MIT",
+  "homepage": "https://www.getattrib.com/integrations/overview",
+  "author": { "name": "GetAttrib", "url": "https://www.getattrib.com" },
+  "repository": { "type": "git", "url": "git+https://github.com/NeuroLogicAIagency/n8n-nodes-getattrib.git" },
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && cp nodes/GetAttrib/getattrib.svg dist/nodes/GetAttrib/getattrib.svg",
+    "lint": "tsc --noEmit"
+  },
+  "files": ["dist"],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "strict": true,
+    "credentials": ["dist/credentials/GetAttribOAuth2Api.credentials.js"],
+    "nodes": ["dist/nodes/GetAttrib/GetAttrib.node.js"]
+  },
+  "devDependencies": {
+    "n8n-workflow": "*",
+    "typescript": "^5.4.0"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}
