@@ -8,7 +8,11 @@ In n8n: **Settings > Community nodes > Install**, then enter `n8n-nodes-getattri
 
 ## Sign in
 
-Create a **GetAttrib OAuth2 API** credential and choose **Sign in**. A GetAttrib page opens where you approve access. No keys to copy.
+1. In GetAttrib, open **Integrations > n8n** and click **Create my sign-in app**. Copy the **Client ID** and **Client Secret** (the secret is shown once).
+2. In n8n, create a **GetAttrib OAuth2 API** credential and paste them in.
+3. Click **Connect my account** and approve access on the GetAttrib page.
+
+If you host n8n yourself, paste the **OAuth Redirect URL** that n8n shows at the top of the credential into GetAttrib when you create the app. n8n Cloud users keep the default.
 
 ## What it does
 
